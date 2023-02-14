@@ -20,7 +20,7 @@
 			<template #header>
 				<div :class="$style.logo">
 					<img
-						:src="basePath + (isCollapsed ? 'n8n-logo-collapsed.svg' : 'n8n-logo-expanded.svg')"
+						:src="basePath + (isCollapsed ? 'client-logo-collapsed.webp' : 'client-logo-expanded.webp')"
 						:class="$style.icon"
 						alt="n8n"
 					/>
@@ -468,7 +468,7 @@ export default mixins(
 		img {
 			position: relative;
 			left: 1px;
-			height: 20px;
+			height: 50px;
 		}
 	}
 
@@ -477,6 +477,7 @@ export default mixins(
 
 		.logo img {
 			left: 0;
+			height: 20px;
 		}
 	}
 }
