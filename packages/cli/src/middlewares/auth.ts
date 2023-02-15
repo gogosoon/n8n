@@ -85,6 +85,7 @@ export const setupAuthMiddlewares = (
 			req.url.startsWith('/js/') ||
 			req.url.startsWith('/fonts/') ||
 			req.url.includes('.svg') ||
+			req.url.includes('.webp') ||
 			req.url.startsWith(`/${restEndpoint}/settings`) ||
 			req.url.startsWith(`/${restEndpoint}/login`) ||
 			req.url.startsWith(`/${restEndpoint}/logout`) ||
